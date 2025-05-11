@@ -1,0 +1,16 @@
+{
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/.next": true,
+        "next-env.d.ts": true,
+        ".swc": true
+    },
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "i18n-ally.localesPaths": [
+        "./messages"
+    ],
+    "i18n-ally.keystyle": "nested",
+}
