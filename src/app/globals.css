@@ -12,6 +12,8 @@
     --color-synth-plum: #920075;
     --color-synth-bluegrey: #5481a7;
     --color-synth-dark-magenta: #672f56;
+    --color-synth-magenta: #b376a7;
+    --color-synth-orange: #ff6c11;
 }
 
 body {
@@ -20,10 +22,10 @@ body {
     color: #ededed;
 }
 
-.blue-purple-gradient {
-    @apply bg-linear-to-b from-synth-bluegrey from-0% via-white via-45% to-synth-dark-magenta to-50% bg-clip-text text-transparent;
+.blue-white-gradient {
+    @apply bg-linear-to-b from-synth-bluegrey from-0% to-white to-75%;
 }
 
 .pink-purple-gradient {
-    @apply bg-linear-to-b from-synth-light-pink to-synth-plum bg-clip-text text-transparent;
+    @apply bg-linear-to-b from-synth-light-pink to-synth-plum;
 }

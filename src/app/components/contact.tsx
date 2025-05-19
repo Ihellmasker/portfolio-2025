@@ -1,10 +1,10 @@
 import FrontPageHeader from "@portfolio/app/components/page-layout/front-page-header";
 import FrontPageSection from "@portfolio/app/components/page-layout/front-page-section";
 
-export default function Skills() {
+export default function Contact() {
     return (
         <FrontPageSection>
-            <FrontPageHeader>What can I do for you?</FrontPageHeader>
+            <FrontPageHeader>Get in touch</FrontPageHeader>
         </FrontPageSection>
     );
 }

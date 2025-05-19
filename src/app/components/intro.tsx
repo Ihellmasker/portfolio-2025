@@ -1,12 +1,8 @@
+import FrontPageSection from "@portfolio/app/components/page-layout/front-page-section";
+
 export default function Intro() {
     return (
-        <header>
-            <h1 className="font-inter font-semibold text-8xl pink-purple-gradient pb-3">
-                Hello, I&apos;m Andy
-            </h1>
-            <h2 className="font-inter blue-purple-gradient font-semibold text-2xl pb-6">
-                Front-end Developer
-            </h2>
+        <FrontPageSection>
             <p className="pb-3">
                 I&apos;m a frontend developer based in Essex, UK, with a focus
                 on building user-friendly web experiences using modern
@@ -26,6 +22,6 @@ export default function Intro() {
                 digital experiences while staying adaptable and curious in
                 everything I do.
             </p>
-        </header>
+        </FrontPageSection>
     );
 }
