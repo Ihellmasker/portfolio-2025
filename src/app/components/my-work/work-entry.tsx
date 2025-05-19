@@ -1,4 +1,4 @@
-import { IWorkData } from "@portfolio/app/data/work-data";
+import { IWorkData } from "@portfolio/data/work-data";
 import Image from "next/image";
 
 function GradientLine({ vertical }: { vertical?: boolean }) {
