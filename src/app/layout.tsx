@@ -1,9 +1,9 @@
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Sidenav from "@portfolio/app/components/sidenav";
+import Sidenav from "@portfolio/components/sidenav";
+import "@portfolio/globals.css";
 import type { Metadata } from "next";
 import { Inter, Noto_Sans } from "next/font/google";
-import "./globals.css";
 config.autoAddCss = false;
 
 const inter = Inter({
@@ -35,7 +35,7 @@ export default function RootLayout({
                 className={`${inter.variable} ${notoSans.variable} antialiased`}
             >
                 <Sidenav />
-                {children}
+                <main className="ml-40">{children}</main>
             </body>
         </html>
     );

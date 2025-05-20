@@ -1,6 +1,6 @@
-import WorkEntry from "@portfolio/app/components/my-work/work-entry";
-import FrontPageHeader from "@portfolio/app/components/page-layout/front-page-header";
-import FrontPageSection from "@portfolio/app/components/page-layout/front-page-section";
+import WorkEntry from "@portfolio/components/my-work/work-entry";
+import FrontPageHeader from "@portfolio/components/page-layout/front-page-header";
+import FrontPageSection from "@portfolio/components/page-layout/front-page-section";
 import { WORK_DATA } from "@portfolio/data/work-data";
 
 export function MyWork() {

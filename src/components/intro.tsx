@@ -1,4 +1,4 @@
-import FrontPageSection from "@portfolio/app/components/page-layout/front-page-section";
+import FrontPageSection from "@portfolio/components/page-layout/front-page-section";
 
 export default function Intro() {
     return (

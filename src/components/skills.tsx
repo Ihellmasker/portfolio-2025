@@ -1,5 +1,5 @@
-import FrontPageHeader from "@portfolio/app/components/page-layout/front-page-header";
-import FrontPageSection from "@portfolio/app/components/page-layout/front-page-section";
+import FrontPageHeader from "@portfolio/components/page-layout/front-page-header";
+import FrontPageSection from "@portfolio/components/page-layout/front-page-section";
 
 export default function Skills() {
     return (

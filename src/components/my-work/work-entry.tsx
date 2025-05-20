@@ -1,5 +1,6 @@
 import { IWorkData } from "@portfolio/data/work-data";
 import Image from "next/image";
+import Link from "next/link";
 
 function GradientLine({ side }: { side: "top" | "left" | "bottom" | "right" }) {
     let lineClass =
@@ -32,7 +33,10 @@ function GradientLine({ side }: { side: "top" | "left" | "bottom" | "right" }) {
 
 export default function WorkEntry({ entryData }: { entryData: IWorkData }) {
     return (
-        <button className="inline-block relative p-6 group">
+        <Link
+            className="inline-block relative p-6 group cursor-pointer"
+            href={`work/${entryData.id}`}
+        >
             <GradientLine side="top" />
             <GradientLine side="left" />
             {entryData.images.thumbnail ? (
@@ -53,6 +57,6 @@ export default function WorkEntry({ entryData }: { entryData: IWorkData }) {
             <div className="absolute bg-synth-plum border-4 border-synth-light-pink px-3 py-2 rounded-lg left-1/2 -translate-1/2 bottom-1/10 text-center opacity-0 font-bold text-shadow-lg/30 transition-all group-hover:opacity-100 group-hover:bottom-3/10">
                 More info
             </div>
-        </button>
+        </Link>
     );
 }
