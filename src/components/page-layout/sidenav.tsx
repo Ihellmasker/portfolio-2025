@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Sidenav() {
     return (
-        <nav className="w-40 h-screen bg-synth-black fixed top-0 border-r-4 border-synth-pink px-4 pt-8">
+        <nav className="invisible md:visible md:w-40 h-screen bg-synth-black fixed top-0 border-r-4 border-synth-pink px-4 pt-8">
             <section className="mb-10">
                 <Logo />
             </section>

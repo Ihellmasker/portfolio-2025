@@ -1,8 +1,8 @@
-import FrontPageSection from "@portfolio/components/page-layout/front-page-section";
+import Section from "@portfolio/components/page-layout/section";
 
 export default function Intro() {
     return (
-        <FrontPageSection>
+        <Section>
             <p className="pb-3">
                 I&apos;m a frontend developer based in Essex, UK, with a focus
                 on building user-friendly web experiences using modern
@@ -22,6 +22,6 @@ export default function Intro() {
                 digital experiences while staying adaptable and curious in
                 everything I do.
             </p>
-        </FrontPageSection>
+        </Section>
     );
 }

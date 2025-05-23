@@ -1,10 +1,10 @@
-import FrontPageHeader from "@portfolio/components/page-layout/front-page-header";
-import FrontPageSection from "@portfolio/components/page-layout/front-page-section";
+import Section from "@portfolio/components/page-layout/section";
+import Header3 from "@portfolio/components/typography/header-3";
 
 export default function Contact() {
     return (
-        <FrontPageSection>
-            <FrontPageHeader>Get in touch</FrontPageHeader>
-        </FrontPageSection>
+        <Section>
+            <Header3>Get in touch</Header3>
+        </Section>
     );
 }
