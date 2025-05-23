@@ -33,20 +33,22 @@ export default function WorkPage({
                 )}
             </Section>
             <Section>
-                <div>
-                    <code className="text-base blue-white-gradient bg-clip-text text-transparent mb-4">
-                        &#47;&#47; {data.tags.join(", ")}
-                    </code>
-                    {data.content_blocks.map((block) => {
-                        return (
-                            <div key={block.title} className="pb-4">
-                                <h4 className="font-inter font-bold mb-1.5">
+                <div className="mb-5">
+                    <div className="mb-4">
+                        <code className="text-base">
+                            &#47;&#47; {data.tags.join(", ")}
+                        </code>
+                    </div>
+                    {data.content_blocks.map((block) => (
+                        <div key={block.title} className="flex flex-row mb-2">
+                            <div className="w-2/10 font-inter">
+                                <span className="blue-white-gradient bg-clip-text text-transparent">
                                     {block.title}
-                                </h4>
-                                <div className="text-base">{block.body}</div>
+                                </span>
                             </div>
-                        );
-                    })}
+                            <div className="flex-1 text-base">{block.body}</div>
+                        </div>
+                    ))}
                 </div>
                 <div className="relative float-left mr-5 mb-5 w-full md:w-160">
                     <DeviceImageFrame
