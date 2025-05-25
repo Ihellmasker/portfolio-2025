@@ -5,7 +5,7 @@ import { WORK_DATA } from "@portfolio/data/work-data";
 import { notFound } from "next/navigation";
 import { use } from "react";
 
-export default function WorkPage({
+export default function IndividualWorkPage({
     params,
 }: {
     params: Promise<{ id: string }>;

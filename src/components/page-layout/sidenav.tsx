@@ -2,15 +2,16 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from "@portfolio/components/logo";
+import SidenavLinks from "@portfolio/components/page-layout/sidenav-links";
 import Link from "next/link";
 
 export default function Sidenav() {
     return (
-        <nav className="invisible md:visible md:w-40 h-screen bg-synth-black fixed top-0 border-r-4 border-synth-pink px-4 pt-8">
-            <section className="mb-10">
+        <nav className="invisible md:visible md:w-40 h-screen bg-synth-black fixed top-0 border-r-4 border-synth-pink pt-8">
+            <section className="mb-10 px-4">
                 <Logo />
             </section>
-            <section className="mb-40">
+            <section className="mb-40 px-4">
                 <ul className="flex flex-row justify-center">
                     <li>
                         <Link href={"https://github.com/ihellmasker"}>
@@ -42,12 +43,7 @@ export default function Sidenav() {
                 </ul>
             </section>
             <section>
-                <ul className="flex flex-col">
-                    <li>Nav 1</li>
-                    <li>Nav 2</li>
-                    <li>Nav 3</li>
-                    <li>Nav 4</li>
-                </ul>
+                <SidenavLinks />
             </section>
         </nav>
     );
