@@ -3,7 +3,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Logo from "@portfolio/components/logo";
 import SidenavLinks from "@portfolio/components/page-layout/sidenav-links";
-import Link from "next/link";
 
 export default function Sidenav() {
     return (
@@ -14,31 +13,37 @@ export default function Sidenav() {
             <section className="mb-40 px-4">
                 <ul className="flex flex-row justify-center">
                     <li>
-                        <Link href={"https://github.com/ihellmasker"}>
+                        <a
+                            href="https://github.com/ihellmasker"
+                            target="_blank"
+                        >
                             <FontAwesomeIcon
                                 icon={faGithub}
                                 fixedWidth
                                 size="xl"
                             />
-                        </Link>
+                        </a>
                     </li>
                     <li>
-                        <Link href={"https://www.linkedin.com/in/ihm-andrew/"}>
+                        <a
+                            href="https://www.linkedin.com/in/ihm-andrew/"
+                            target="_blank"
+                        >
                             <FontAwesomeIcon
                                 icon={faLinkedin}
                                 fixedWidth
                                 size="xl"
                             />
-                        </Link>
+                        </a>
                     </li>
                     <li>
-                        <Link href={"mailto:ihm.andrew@gmail.com"}>
+                        <a href="mailto:ihm.andrew@gmail.com" target="_blank">
                             <FontAwesomeIcon
                                 icon={faEnvelope}
                                 fixedWidth
                                 size="xl"
                             />
-                        </Link>
+                        </a>
                     </li>
                 </ul>
             </section>
