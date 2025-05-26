@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme inline {
+    --font-inter: var(--font-inter);
+    --font-noto-sans: var(--font-noto-sans);
+
+    --color-synth-black: #0d0221;
+    --color-synth-dark-purple: #261447;
+    --color-synth-red: #ff3864;
+    --color-synth-light-pink: #f6019d;
+    --color-synth-pink: #f706cf;
+    --color-synth-plum: #920075;
+    --color-synth-bluegrey: #5481a7;
+    --color-synth-dark-magenta: #672f56;
+    --color-synth-magenta: #b376a7;
+    --color-synth-orange: #ff6c11;
+}
+
+body {
+    @apply font-noto-sans text-xl;
+    background: var(--color-synth-dark-purple);
+    color: #ededed;
+}
+
+.blue-white-gradient {
+    @apply bg-linear-to-b from-synth-bluegrey from-0% to-white to-75%;
+}
+
+.pink-purple-gradient {
+    @apply bg-linear-to-b from-synth-light-pink to-synth-plum;
+}

@@ -1,17 +1,19 @@
+import Contact from "@portfolio/components/contact";
+import Footer from "@portfolio/components/footer";
+import Header from "@portfolio/components/header";
+import Intro from "@portfolio/components/intro";
+import { MyWork } from "@portfolio/components/my-work";
+import Skills from "@portfolio/components/skills";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <ul className="list-inside text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            AndysThings
-          </li>
-          <li className="tracking-[-.01em]">
-            Coming VERY soon
-          </li>
-        </ul>
-      </main>
-    </div>
-  );
+    return (
+        <>
+            <Header />
+            <Intro />
+            <Skills />
+            <MyWork />
+            <Contact />
+            <Footer />
+        </>
+    );
 }
